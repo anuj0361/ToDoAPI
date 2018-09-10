@@ -1,10 +1,10 @@
-var express=require('express');
-var bodyParser=require('body-parser');
-var {ObjectID}=require('mongodb');
+const express=require('express');
+const bodyParser=require('body-parser');
+const {ObjectID}=require('mongodb');
 
-var {mongoose}=require('./db/mongoose');
-var {Todo}=require('./models/todo');
-var {Todo}=require('./models/user');
+const {mongoose}=require('./db/mongoose');
+const {Todo}=require('./models/todo');
+const {Todo}=require('./models/user');
 
 var app=express();
 app.use(bodyParser.json());
